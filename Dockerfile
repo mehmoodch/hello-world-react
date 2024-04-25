@@ -1,6 +1,6 @@
 # FROM node:14
 
-FROM099199746132.dkr.ecr.eu-west-1.amazonaws.com/node-image-for-dockerfile:latest
+FROM 099199746132.dkr.ecr.eu-west-1.amazonaws.com/node-image-for-dockerfile:latest
 
 WORKDIR /app
 
