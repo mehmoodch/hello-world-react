@@ -5,7 +5,7 @@ env:
     AWS_ACCOUNT_ID: "099199746132"
     AWS_DEFAULT_REGION: "eu-west-1"
     REPOSITORY_URI: "099199746132.dkr.ecr.eu-west-1.amazonaws.com/react-app-image-repository"
-    IMAGE_TAG="latest"
+    IMAGE_TAG: "latest"
 
 phases:
   pre_build:
