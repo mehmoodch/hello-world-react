@@ -14,7 +14,9 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:alpine
+# FROM nginx:alpine
+
+FROM 099199746132.dkr.ecr.eu-west-1.amazonaws.com/nginx-image-for-dockerfile:latest
 
 COPY --from=0 /app/build /usr/share/nginx/html
 
