@@ -12,7 +12,7 @@ function App() {
   const awsRegion = 'us-east-1';
   const serviceDiscoveryEndpoint = 'crud-service-discovery.backend-namespace';
   const apiPath = '/api/items';
-  const backendServiceURL = `http://node-backend-service-servicediscoveryservice.node-backend-service-namespace:5000/api/items`;
+  const backendServiceURL = `http://node-backend-service-servicediscoveryservice.node-backend-service-namespace/api/items`;
 
  
 
