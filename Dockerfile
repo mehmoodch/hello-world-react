@@ -1,4 +1,3 @@
-
 # FROM node:14
 
 FROM 099199746132.dkr.ecr.us-east-1.amazonaws.com/node-image-for-dockerfile:latest
