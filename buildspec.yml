@@ -26,7 +26,8 @@ phases:
       
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       
-      - printf '[{"name":"react-frontend-container","imageUri":"%s:%s"}]' $REPOSITORY_URI $IMAGE_TAG > imagedefinitions.json
+      
+      - echo '[{"name":"react-frontend-container","imageUri":"'$REPOSITORY_URI:$IMAGE_TAG'"}]' > imagedefinitions.json
       - cat imagedefinitions.json
 
 artifacts:
