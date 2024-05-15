@@ -47,7 +47,7 @@ function App() {
 
   return (
 <div>
-<h1>CRUD App with Fetch API and CORS Digitify Tech</h1>
+<h1>CRUD App with Fetch API and CORS Digitify Tech Company</h1>
 <ul>
         {items.map(item => (
 <li key={item.id}>{item.name}</li>
