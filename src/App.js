@@ -9,10 +9,10 @@ function App() {
  
 
   // Hardcoded AWS region
-  const awsRegion = 'us-east-1';
-  const serviceDiscoveryEndpoint = 'crud-service-discovery.backend-namespace';
+  const awsRegion = 'eu-west-1';
+  const serviceDiscoveryEndpoint = 'backend.development.internal';
   const apiPath = '/api/items';
-  const backendServiceURL = `http://node-backend-service-servicediscoveryservice.node-backend-service-namespace:5000/api/items`;
+  const backendServiceURL = `http://backend.development.internal:3000/api/items`;
 
  
 
