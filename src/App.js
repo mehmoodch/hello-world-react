@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-const awsRegion = 'us-east-1';
-const serviceDiscoveryEndpoint = 'backend.development.internal';
-const apiPath = '/api/items';
-const backendServiceURL = `http://backend.development.internal:3000/api/items`;
+
 
 
 function App() {
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState('');
+  const awsRegion = 'us-east-1';
+  const serviceDiscoveryEndpoint = 'backend.development.internal';
+  const apiPath = '/api/items';
+  const backendServiceURL = `http://backend.development.internal:3000/api/items`;
 
 
 
@@ -17,7 +18,6 @@ function App() {
   //const serviceDiscoveryEndpoint = 'crud-service-discovery.backend-namespace';
   //const apiPath = '/api/items';
   //const backendServiceURL = `http://localhost:5000/api/items`;
-
 
 
   
