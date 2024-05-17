@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
- 
+const awsRegion = 'us-east-1';
+const serviceDiscoveryEndpoint = 'backend.development.internal';
+const apiPath = '/api/items';
+const backendServiceURL = `http://backend.development.internal:3000/api/items`;
+
 
 function App() {
   const [items, setItems] = useState([]);
@@ -16,19 +20,7 @@ function App() {
 
 
 
-// Hardcoded AWS region
-  //const awsRegion = 'us-east-1';
-  //const serviceDiscoveryEndpoint = 'backend.development.internal';
-  //const apiPath = '/api/items';
-  //const backendServiceURL = `http://localhost:3000/api/items`;
-
- 
-
-// Hardcoded AWS region
-  const awsRegion = 'us-east-1';
-  const serviceDiscoveryEndpoint = 'backend.development.internal';
-  const apiPath = '/api/items';
-  const backendServiceURL = `http://backend.development.internal:3000/api/items`;
+  
 
 
  
