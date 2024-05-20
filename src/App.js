@@ -15,21 +15,21 @@ function App() {
   }, [backendServiceURL]);
 
   const handleCreateItem = () => {
-    if (newItem) {
-      fetch(backendServiceURL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name: newItem }),
-      })
-        .then(response => response.json())
-        .then(data => {
-          setItems([...items, data]);
-          setNewItem('');
-        })
-        .catch(error => console.error('Error creating item:', error));
-    }
+    // if (newItem) {
+    //   fetch(backendServiceURL, {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({ name: newItem }),
+    //   })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //       setItems([...items, data]);
+    //       setNewItem('');
+    //     })
+    //     .catch(error => console.error('Error creating item:', error));
+    // }
   };
 
   return (
