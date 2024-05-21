@@ -4,8 +4,6 @@ function App() {
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState('');
 
-  // Updated backend service URL
-  const backendServiceURL = 'http://backend.development.internal:3000/api/items';
 
   useEffect(() => {
     fetch(backendServiceURL)
