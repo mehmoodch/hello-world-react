@@ -6,7 +6,11 @@ function App() {
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState('');
 
- 
+  // Hardcoded AWS region
+  const awsRegion = 'us-east-1';
+  const serviceDiscoveryEndpoint = 'crud-service-discovery.backend-namespace';
+  const apiPath = '/api/items';
+  const backendServiceURL = `http://localhost:5000/api/items`;
  
 
   useEffect(() => {
