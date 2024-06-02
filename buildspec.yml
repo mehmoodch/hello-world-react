@@ -23,7 +23,7 @@ phases:
   post_build:
     commands:
       
-      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - docker push $REPOSITORY_URI:latest
       
       
       - echo '[{"name":"react-frontend-container","imageUri":"'$REPOSITORY_URI:$IMAGE_TAG'"}]' > imagedefinitions.json
